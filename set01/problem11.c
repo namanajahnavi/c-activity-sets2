@@ -1,47 +1,51 @@
+//11. Write a C program to find the sum of 2 complex numbers
 #include <stdio.h>
-
-// Define the Complex structure
-struct _complex {
+struct _complex 
+{
     float real;
-    float imaginary;
+    float imag;
 };
 typedef struct _complex Complex;
+Complex input_complex(); 
+Complex add_complex(Complex a, Complex b);
+void output(Complex a, Complex b, Complex sum);
+    
 
-// Function to input a complex number
-Complex input_complex() {
-    Complex num;
-    printf("Enter real and imaginary parts of the complex number: ");
-    scanf("%f %f", &num.real, &num.imaginary);
-    return num;
+int main()
+ {
+    Complex a, b, result;
+    printf("For first complex number:\n");
+    a = input_complex();
+    printf("\nFor second complex number:\n");
+    b = input_complex();
+
+    result = add_complex(a, b);
+
+    output(a, b, result);
+
+    return 0;
 }
 
-// Function to add two complex numbers
-Complex add_complex(Complex a, Complex b) {
+Complex input_complex()
+ {
+    Complex x;
+    printf("Enter real part: ");
+    scanf("%f", &x.real);
+    printf("Enter imaginary part: ");
+    scanf("%f", &x.imag);
+    return x;
+}
+
+Complex add_complex(Complex a, Complex b)
+ {
     Complex sum;
     sum.real = a.real + b.real;
-    sum.imaginary = a.imaginary + b.imaginary;
+    sum.imag = a.imag + b.imag;
     return sum;
 }
 
-// Function to output complex numbers and their sum
-void output(Complex a, Complex b, Complex sum) {
-    printf("First complex number: %.2f + %.2fi\n", a.real, a.imaginary);
-    printf("Second complex number: %.2f + %.2fi\n", b.real, b.imaginary);
-    printf("Sum: %.2f + %.2fi\n", sum.real, sum.imaginary);
-}
-
-int main() {
-    Complex num1, num2, sum;
-
-    // Input two complex numbers
-    num1 = input_complex();
-    num2 = input_complex();
-
-    // Calculate the sum
-    sum = add_complex(num1, num2);
-
-    // Output the result
-    output(num1, num2, sum);
-
-    return 0;
+void output(Complex a, Complex b, Complex sum) 
+{
+    printf("The sum of ");
+    printf("%.f + %.fi and %.f + %.fi is %.f + %.fi\n", a.real, a.imag, b.real, b.imag, sum.real, sum.imag);
 }
