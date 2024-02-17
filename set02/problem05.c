@@ -1,12 +1,17 @@
-#include <stdio.h>
-int main()
+//05.  Write a program to find GCD _(HCF)_ of two numbers.
+# include <stdio.h>
+int input()
 {
-    int x,y,sum;
-    printf("enter the value of x");
-    scanf("%d",&x);
-    printf("enter the value of y");
-    scanf("%d",&y);
-    sum=x+y;
-    printf(" The sum of %d and %d is %d",x,y,sum);
-    return sum;
+    int n;
+    printf("enter the value of n");
+    scanf("%d",&n);
+    return n;
+}
+int find_gcd(int a, int b)
+{
+
+}
+void output(int a, int b, int gcd)
+{
+    
 }
