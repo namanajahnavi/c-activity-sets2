@@ -15,3 +15,8 @@ void output(int a, int b, int gcd)
 {
     
 }
+int main()
+{
+    
+
+}
