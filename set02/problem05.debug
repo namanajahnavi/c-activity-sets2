@@ -1,0 +1,35 @@
+PS C:\Users\jahna\github-classroom\c-activity-sets2\set02> gcc -g -O0 problem05.c -o problem05.exe
+PS C:\Users\jahna\github-classroom\c-activity-sets2\set02> gdb problem05.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\jahna\github-classroom\c-activity-sets2\set02\problem05.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x4014eb: file problem05.c, line 25.
+(gdb) r
+Starting program: C:\Users\jahna\github-classroom\c-activity-sets2\set02/problem05.exe
+[New Thread 16908.0x30a4]
+[New Thread 16908.0x4f30]
+
+Breakpoint 1, main () at problem05.c:25
+25          int a = input();
+(gdb) n
+enter the value of n5
+26          int b = input();
+(gdb) n
+enter the value of n6
+27          int gcd= find_gcd( a,  b);
+(gdb) n
+28          output(a,b,gcd);
+(gdb) n
+Gcd of 5 and 6 is 129       return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 16908) exited normally]
+(gdb) q

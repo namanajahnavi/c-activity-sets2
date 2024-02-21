@@ -9,7 +9,12 @@ int input()
 }
 int find_gcd(int a, int b)
 {
-    
+    while (b != 0) {
+        int app = b;
+        b = a % b;
+        a = app;
+    }
+    return a;
 }
 void output(int a, int b, int gcd)
 {
