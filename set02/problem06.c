@@ -7,6 +7,7 @@ void input_string(char *a)
 }
 void str_reversse(char *str, char *rev_str)
 {
+    int length;
     
 }
 void output(char *a, char *reverse_a)
