@@ -14,6 +14,13 @@ void output(int n, Triangle t[n], Triangle smallest);
 
 int input_n()
 {
+	int n;
+	printf("enter the number of triangles\n");
+	scanf("%d",&n);
+	return n;
+}
+void find_area(Triangle *t)
+{
 	
 }
 int main()
