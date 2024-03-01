@@ -27,14 +27,11 @@ int is_triangle(float x1, float y1, float x2, float y2,float x3, float y3)
 }
 void output(float x1, float y1, float x2, float y2,float x3, float y3, int result)
 {
-   
-       printf("the three points do not form a triangle");
-   else
-      printf("the three points form a %s triangle",(result==1));
+   if()
 }
 int main() {
     float x1, y1, x2, y2, x3, y3;
     input_triangle(&x1, &y1, &x2, &y2, &x3, &y3);
-    output(x1, y1, x2, y2, x3, y3, result);
+    output(x1, y1, x2, y2, x3, y3, );
     return 0;
 }
