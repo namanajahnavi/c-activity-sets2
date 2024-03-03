@@ -20,5 +20,5 @@ void output(int n, int result)
 }
 int main()
 {
-
+    
 }
